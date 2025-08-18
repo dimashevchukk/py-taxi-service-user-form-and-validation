@@ -86,6 +86,7 @@ def assign_to_car(request, pk):
     car.drivers.add(request.user)
     return redirect("taxi:car-detail", pk=car.pk)
 
+
 @login_required
 def remove_from_car(request, pk):
     car = get_object_or_404(Car, pk=pk)
