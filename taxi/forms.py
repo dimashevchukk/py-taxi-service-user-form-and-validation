@@ -19,7 +19,7 @@ class CarForm(forms.ModelForm):
     class Meta:
         model = Car
         fields = ["model", "manufacturer", "drivers"]
-    
+
 
 class DriverCreateForm(UserCreationForm):
     license_number = forms.CharField(
